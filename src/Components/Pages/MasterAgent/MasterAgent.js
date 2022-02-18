@@ -23,7 +23,7 @@ const MasterAgent = () => {
   };
 
   return (
-    <div className="container CustomerService" style={{ width: "800x" }}>
+    <div className=" CustomerService container" style={{ width: "800px" }}>
       <div>
         <input
           type="number"

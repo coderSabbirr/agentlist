@@ -23,7 +23,7 @@ const AgentList = () => {
                 প্লে থেকে ইন্সটল করে নিন।
                 <p style={{ textAlign: "center" }}>
                   <Link
-                    to="/"
+                    to="/mg"
                     style={{
                       color: "#5758E9",
                       fontWeight: "normal",

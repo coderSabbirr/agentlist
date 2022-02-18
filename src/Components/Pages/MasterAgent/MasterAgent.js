@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ws from "./../../../Image/ws.png";
+import "./MasterAgent.css";
 const MasterAgent = () => {
   const [customers, setCusomter] = useState([]);
   const [displayAgent, setDisplayAegnt] = useState([]);
@@ -23,10 +24,10 @@ const MasterAgent = () => {
   };
 
   return (
-    <div className=" CustomerService container" style={{ width: "800px" }}>
+    <div className="CustomerService">
       <div>
         <input
-          type="number"
+          type="text"
           id=""
           placeholder="Search Agent ID.."
           className="input-id"

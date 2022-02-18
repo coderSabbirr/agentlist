@@ -3,7 +3,7 @@ import ws from "./../../../Image/ws.png";
 
 const Admin = () => {
   return (
-    <div className="CustomerService" style={{ width: "800x" }}>
+    <div className="CustomerService">
       <div style={{ minHeight: "50px" }}>
         <table className="text-data">
           <tbody>

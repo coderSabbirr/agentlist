@@ -26,7 +26,7 @@ const SuperAgent = () => {
   };
 
   return (
-    <div className="container CustomerService" style={{ width: "800x" }}>
+    <div className="container CustomerService">
       <div>
         <input
           type="number"

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import help from "./../../../../../src/Image/help.png";
-import logo from "./../../../../../src/Image/logo.png";
+import logo from "./../../../../../src/Image/logo.jpg";
 import room from "./../../../../../src/Image/rooms (1).png";
 import "./Header.css";
 const Header = () => {

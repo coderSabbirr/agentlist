@@ -1,0 +1,41 @@
+.CustomerService img {
+  width: 26px;
+}
+.CustomerService {
+  margin-top: 5px;
+  text-align: center;
+}
+.header-text {
+  background-image: url(../../../Image/datatitlebg.png);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.text-data {
+  font-size: 16px;
+  margin: auto;
+  background-color: #ccc;
+}
+.text-data th {
+  background-color: #516aa2;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 3px;
+}
+.text-data th {
+  border: 2px solid #cccccc;
+}
+.text-data td {
+  border: 2px solid #cccccc;
+  padding: 4px;
+  background-color: #eeeeee;
+}
+.text-data td a {
+  text-decoration: none;
+  color: #f60;
+  font-weight: 700;
+}
+.text-data td a:hover {
+  color: #a3761c;
+}

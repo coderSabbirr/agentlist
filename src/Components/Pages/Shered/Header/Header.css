@@ -1,0 +1,40 @@
+.header-img img {
+  height: 80px;
+  width: 300px;
+}
+.header {
+  width: 850px;
+  height: auto;
+  min-height: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+.navigation {
+  background-image: url(https://i.ibb.co/wWm9mgF/menubar-bg.png);
+  height: 40px;
+  width: 100%;
+  margin-bottom: 5px;
+  font-family: lucida sans unicode, lucida grande, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #555;
+  text-align: center;
+}
+.navigation .nav-item {
+  border-right: 1px solid rgba(242, 245, 246, 0.924);
+  height: 40px;
+}
+.navigation .nav-item a {
+  padding: 6px !important;
+  color: #555555;
+}
+.navigation .nav-item a:hover {
+  padding: 6px !important;
+  color: #ff9900;
+  background-color: #292929;
+}
+.navigation img {
+  margin-right: 10px !important;
+  border: none;
+  vertical-align: middle;
+}

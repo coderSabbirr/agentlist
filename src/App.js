@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Admin from "./Components/Pages/Admin/Admin";
+import SubAdmin from "./Components/Pages/Admin/SubAdmin";
 import COMPLAIN1 from "./Components/Pages/COMPLAIN1/COMPLAIN1";
 import Complain2 from "./Components/Pages/COMPLAIN1/Complain2";
 import CustomerService from "./Components/Pages/CustomerService/CustomerService";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/cs" element={<CustomerService />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/subadmin" element={<SubAdmin />} />
         <Route path="/as" element={<SuperAgent />} />
         <Route path="/mg" element={<MasterAgent />} />
         <Route path="/cp1" element={<COMPLAIN1 />} />

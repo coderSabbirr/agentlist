@@ -47,7 +47,7 @@ const SubAdmin = () => {
           <tbody>
             <tr>
               <th className="header header-text" colSpan="16">
-                9WICKETS SUPER AGENT LIST
+                SKBET SUB ADMIN LIST
               </th>
             </tr>
             <tr></tr>

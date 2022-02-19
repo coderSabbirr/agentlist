@@ -62,7 +62,7 @@ const MasterAgent = () => {
           <tbody>
             <tr>
               <th className="header header-text" colSpan="16">
-                9WICKETS SUPER AGENT LIST
+                SKBET MASTER AGENT LIST
               </th>
             </tr>
             <tr></tr>

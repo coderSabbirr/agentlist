@@ -50,7 +50,7 @@ const SuperAgent = () => {
           <tbody>
             <tr>
               <th className="header header-text" colSpan="16">
-                9WICKETS SUPER AGENT LIST
+                SKBET SUPER AGENT LIST
               </th>
             </tr>
             <tr></tr>

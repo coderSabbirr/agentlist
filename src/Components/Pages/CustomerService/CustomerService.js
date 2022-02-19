@@ -15,7 +15,7 @@ const CustomerService = () => {
           <tbody>
             <tr>
               <th className="header header-text" colSpan="16">
-                9WICKETS CUSTOMER SERVICE LIST (TIME 10AM TO 10PM)
+                SKBET CUSTOMER SERVICE LIST (TIME 10AM TO 10PM)
               </th>
             </tr>
             <tr></tr>

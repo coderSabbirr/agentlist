@@ -20,8 +20,6 @@ const MasterAgent = () => {
           }
           return arr;
         };
-        const foo = [1, 2, 3];
-
         setDisplayAegnt(shuffle(data));
       });
   }, []);

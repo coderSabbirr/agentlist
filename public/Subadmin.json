@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "type": "Sub Admin",
+        "name": "ARMAN MALIK",
+        "phone": "+601123674713"
+    },
+    {
+        "id": "2",
+        "type": "Sub Admin",
+        "name": "ADNAN SAMI",
+        "phone": "+601123673063"
+    },
+    {
+        "id": "3",
+        "type": "Sub Admin",
+        "name": "IMRAN TARAFDAR",
+        "phone": "+601124255228"
+    },
+    {
+        "id": "4",
+        "type": "Sub Admin",
+        "name": "ATIF ASLAM",
+        "phone": "+60172769682"
+    }
+]

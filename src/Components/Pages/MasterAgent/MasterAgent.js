@@ -10,9 +10,33 @@ const MasterAgent = () => {
       .then((res) => res.json())
       .then((data) => {
         setCusomter(data);
-        setDisplayAegnt(data);
+        // setDisplayAegnt(data);
+
+        const shuffle = ([...arr]) => {
+          let m = arr.length;
+          while (m) {
+            const i = Math.floor(Math.random() * m--);
+            [arr[m], arr[i]] = [arr[i], arr[m]];
+          }
+          return arr;
+        };
+        const foo = [1, 2, 3];
+
+        setDisplayAegnt(shuffle(data));
       });
   }, []);
+
+  // const shuffle = ([...arr]) => {
+  //   let m = arr.length;
+  //   while (m) {
+  //     const i = Math.floor(Math.random() * m--);
+  //     [arr[m], arr[i]] = [arr[i], arr[m]];
+  //   }
+  //   return arr;
+  // };
+  // const foo = [1, 2, 3];
+
+  // console.log(shuffle(customers));
 
   const handleSearch = (e) => {
     const searchId = e.target.value;

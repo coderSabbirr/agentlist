@@ -11,16 +11,24 @@ const SuperAgent = () => {
       .then((res) => res.json())
       .then((data) => {
         setCusomter(data);
-        setDisplayAegnt(data);
+        const shuffle = ([...arr]) => {
+          let m = arr.length;
+          while (m) {
+            const i = Math.floor(Math.random() * m--);
+            [arr[m], arr[i]] = [arr[i], arr[m]];
+          }
+          return arr;
+        };
+        setDisplayAegnt(shuffle(data));
       });
   }, []);
 
   const handleSearch = (e) => {
     const searchId = e.target.value;
-    const result = customers.find(
-      ({ id }) => parseInt(id) === parseInt(searchId)
-    );
-    console.log(result);
+    // const result = customers.find(
+    //   ({ id }) => parseInt(id) === parseInt(searchId)
+    // );
+    // console.log(result);
     const machedId = customers.filter((agent) => agent.id.includes(searchId));
     setDisplayAegnt(machedId);
   };

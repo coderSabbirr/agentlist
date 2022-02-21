@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import fb from "./../../../Image/fb.png";
+import ms from "./../../../Image/messenger.png";
 import ws from "./../../../Image/ws.png";
 
 const SubAdmin = () => {
@@ -31,7 +33,7 @@ const SubAdmin = () => {
   };
 
   return (
-    <div className="container CustomerService">
+    <div className=" CustomerService">
       <div>
         <input
           type="number"
@@ -71,9 +73,39 @@ const SubAdmin = () => {
                   <td>
                     <b>{pd.id}</b>
                   </td>
-                  <td>
+                  <td className="text-center">
+                    <a href={pd.facebook}>
+                      <img
+                        src={fb}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: "30px",
+                        }}
+                      />
+                    </a>
+
+                    <a href={pd.messenger}>
+                      <img
+                        src={ms}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: "30px",
+                        }}
+                      />
+                    </a>
                     <a href={`https://wa.me/${pd.phone}`}>
-                      <img src={ws} alt="" />
+                      <img
+                        src={ws}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                        }}
+                      />
                     </a>
                   </td>
                   <td>

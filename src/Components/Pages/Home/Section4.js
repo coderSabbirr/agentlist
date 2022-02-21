@@ -45,7 +45,7 @@ const Section4 = () => {
               </p>
               <p style={{ textAlign: "center", lineHeight: "0" }}>
                 <Link
-                  to="/"
+                  to="/as"
                   style={{
                     color: "#5758E9",
                     fontWeight: "normal",

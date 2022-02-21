@@ -28,11 +28,14 @@
   height: 40px;
 }
 .navigation .nav-item a {
-  padding: 6px !important;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-top: 6px;
   color: #555555;
 }
 .navigation .nav-item a:hover {
-  padding: 6px !important;
   color: #ff9900;
   background-color: #292929;
 }

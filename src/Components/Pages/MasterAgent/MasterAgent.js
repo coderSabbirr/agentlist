@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import fb from "./../../../Image/fb.png";
+import ms from "./../../../Image/messenger.png";
 import ws from "./../../../Image/ws.png";
 import "./MasterAgent.css";
 const MasterAgent = () => {
@@ -55,14 +57,14 @@ const MasterAgent = () => {
           className="input-id"
           onChange={handleSearch}
         />
-        <i className="fas fa-search" />
+        <i className="fas fa-search ms-1" />
       </div>
       <div style={{ minHeight: "50px" }} className="mt-3">
         <table className="text-data">
           <tbody>
             <tr>
               <th className="header header-text" colSpan="16">
-                SKBET MASTER AGENT LIST
+                SKBET 75 MASTER AGENT LIST
               </th>
             </tr>
             <tr></tr>
@@ -82,7 +84,7 @@ const MasterAgent = () => {
                     <b>MASTER</b>
                   </td>
                   <td>
-                    <b>AGENT ID:</b>
+                    <b>{pd.name}</b>
                   </td>
                   <td>
                     <b>{pd.id}</b>
@@ -96,9 +98,39 @@ const MasterAgent = () => {
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
                   </td>
-                  <td>
+                  <td className="text-center">
+                    <a href={pd.facebook}>
+                      <img
+                        src={fb}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: "30px",
+                        }}
+                      />
+                    </a>
+
+                    <a href={pd.messenger}>
+                      <img
+                        src={ms}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: "30px",
+                        }}
+                      />
+                    </a>
                     <a href={`https://wa.me/${pd.phone}`}>
-                      <img src={ws} alt="" />
+                      <img
+                        src={ws}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                        }}
+                      />
                     </a>
                   </td>
                   <td>

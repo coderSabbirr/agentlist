@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import fb from "./../../../Image/fb.png";
+import ms from "./../../../Image/messenger.png";
 import ws from "./../../../Image/ws.png";
 import "./SuperAgent.css";
 const SuperAgent = () => {
@@ -34,7 +36,7 @@ const SuperAgent = () => {
   };
 
   return (
-    <div className="container CustomerService">
+    <div className=" CustomerService">
       <div>
         <input
           type="number"
@@ -50,7 +52,7 @@ const SuperAgent = () => {
           <tbody>
             <tr>
               <th className="header header-text" colSpan="16">
-                SKBET SUPER AGENT LIST
+                SKBET 75 SUPER AGENT LIST
               </th>
             </tr>
             <tr></tr>
@@ -69,16 +71,48 @@ const SuperAgent = () => {
                     <b>SUPER</b>
                   </td>
                   <td>
-                    <b>AGENT ID:</b>
+                    <b>{pd.name}</b>
                   </td>
                   <td>
                     <b>{pd.id}</b>
                   </td>
-                  <td>
+
+                  <td className="text-center">
+                    <a href={pd.facebook}>
+                      <img
+                        src={fb}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: "30px",
+                        }}
+                      />
+                    </a>
+
+                    <a href={pd.messenger}>
+                      <img
+                        src={ms}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: "30px",
+                        }}
+                      />
+                    </a>
                     <a href={`https://wa.me/${pd.phone}`}>
-                      <img src={ws} alt="" />
+                      <img
+                        src={ws}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                        }}
+                      />
                     </a>
                   </td>
+
                   <td>
                     <a href={`https://wa.me/${pd.phone}`}>{pd.phone}</a>
                   </td>

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import fb from "./../../../Image/fb.png";
+import ms from "./../../../Image/messenger.png";
 import ws from "./../../../Image/ws.png";
 import "./CustomerService.css";
 const CustomerService = () => {
@@ -9,13 +11,13 @@ const CustomerService = () => {
       .then((data) => setCusomter(data));
   }, []);
   return (
-    <div className="container CustomerService" style={{ width: "800x" }}>
+    <div className="CustomerService">
       <div style={{ minHeight: "50px" }}>
         <table className="text-data">
           <tbody>
             <tr>
               <th className="header header-text" colSpan="16">
-                SKBET CUSTOMER SERVICE LIST (TIME 10AM TO 10PM)
+                SKBET 75 CUSTOMER SERVICE LIST (TIME 10AM TO 10PM)
               </th>
             </tr>
             <tr></tr>
@@ -34,10 +36,39 @@ const CustomerService = () => {
                   <td>
                     <b>{pd.name}</b>
                   </td>
-                  <td>
-                    {" "}
+                  <td className="text-center">
+                    <a href={pd.facebook}>
+                      <img
+                        src={fb}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: "30px",
+                        }}
+                      />
+                    </a>
+
+                    <a href={pd.messenger}>
+                      <img
+                        src={ms}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: "30px",
+                        }}
+                      />
+                    </a>
                     <a href={`https://wa.me/${pd.phone}`}>
-                      <img src={ws} alt="" />
+                      <img
+                        src={ws}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                        }}
+                      />
                     </a>
                   </td>
                   <td>

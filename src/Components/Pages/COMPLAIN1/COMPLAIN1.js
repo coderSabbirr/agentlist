@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ws from "./../../../Image/ws.png";
 import "./COMPLAIN1.css";
 const COMPLAIN1 = () => {
+  const [complain, setComplain] = useState([]);
+  useEffect(() => {
+    fetch("/COMPLAIN1.json")
+      .then((res) => res.json())
+      .then((data) => setComplain(data));
+  }, []);
   return (
     <div className="">
       <div className="header-quik mt-3 COMPLAIN1">
@@ -36,7 +42,10 @@ const COMPLAIN1 = () => {
                               backgroundColor: "#fbfedf",
                             }}
                           >
-                            <a href="https://wa.me/+442070974844" target="_">
+                            <a
+                              href={`https://wa.me/${complain.number} `}
+                              target="_"
+                            >
                               <img
                                 src={ws}
                                 style={{ width: "100px" }}
@@ -60,8 +69,11 @@ const COMPLAIN1 = () => {
                               backgroundColor: "#fbfedf",
                             }}
                           >
-                            <a href="https://wa.me/+442070974844" target="_">
-                              <h1 className="p-4">+442070974844</h1>
+                            <a
+                              href={`https://wa.me/${complain.number} `}
+                              target="_"
+                            >
+                              <h1 className="p-4">{complain.number}</h1>
                             </a>{" "}
                           </div>
                         </td>

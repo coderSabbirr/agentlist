@@ -18,6 +18,7 @@ const Header = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/" aria-current="page">
                 <img src={room} alt="" />
+                তথ্য
               </Link>
             </li>
             <li className="nav-item">

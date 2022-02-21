@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import fb from "./../../../Image/fb.png";
+import ms from "./../../../Image/messenger.png";
 import ws from "./../../../Image/ws.png";
 
 const Admin = () => {
@@ -16,7 +18,7 @@ const Admin = () => {
           <tbody>
             <tr>
               <th className="header header-text" colSpan="16">
-                SKBET ADMIN LIST
+                SKBET 75 ADMIN LIST
               </th>
             </tr>
 
@@ -35,9 +37,39 @@ const Admin = () => {
                   <td>
                     <b>{pd.name}</b>
                   </td>
-                  <td>
+                  <td className="text-center">
+                    <a href={pd.facebook}>
+                      <img
+                        src={fb}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: "30px",
+                        }}
+                      />
+                    </a>
+
+                    <a href={pd.messenger}>
+                      <img
+                        src={ms}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                          marginRight: "30px",
+                        }}
+                      />
+                    </a>
                     <a href={`https://wa.me/${pd.phone}`}>
-                      <img src={ws} alt="" />
+                      <img
+                        src={ws}
+                        alt=""
+                        style={{
+                          height: "25px",
+                          width: "25px",
+                        }}
+                      />
                     </a>
                   </td>
                   <td>

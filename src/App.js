@@ -7,10 +7,14 @@ import Complain2 from "./Components/Pages/COMPLAIN1/Complain2";
 import CustomerService from "./Components/Pages/CustomerService/CustomerService";
 import Home from "./Components/Pages/Home/Home";
 import MasterAgent from "./Components/Pages/MasterAgent/MasterAgent";
+import Footer from "./Components/Pages/Shered/Header/Footer";
 import Header from "./Components/Pages/Shered/Header/Header";
 import SuperAgent from "./Components/Pages/SuperAgent/SuperAgent";
 
 function App() {
+  document.oncontextmenu = document.body.oncontextmenu = function () {
+    return false;
+  };
   return (
     <BrowserRouter>
       <Header />
@@ -26,6 +30,7 @@ function App() {
         <Route path="/cp1" element={<COMPLAIN1 />} />
         <Route path="/cp2" element={<Complain2 />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

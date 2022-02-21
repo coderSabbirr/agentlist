@@ -12,6 +12,7 @@ import Header from "./Components/Pages/Shered/Header/Header";
 import SuperAgent from "./Components/Pages/SuperAgent/SuperAgent";
 
 function App() {
+  //  right clike disable
   document.oncontextmenu = document.body.oncontextmenu = function () {
     return false;
   };

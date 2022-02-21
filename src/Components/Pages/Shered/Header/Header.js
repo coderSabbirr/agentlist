@@ -46,7 +46,11 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/mg">
+              <Link
+                className="nav-link"
+                to="/mg"
+                style={{ paddingLeft: "8px" }}
+              >
                 <img src={room} alt="অনলাইন মাষ্টার এজেন্ট" />
                 অনলাইন মাষ্টার এজেন্ট
               </Link>

@@ -10,6 +10,9 @@ import MasterAgent from "./Components/Pages/MasterAgent/MasterAgent";
 import Footer from "./Components/Pages/Shered/Header/Footer";
 import Header from "./Components/Pages/Shered/Header/Header";
 import SuperAgent from "./Components/Pages/SuperAgent/SuperAgent";
+import Playlist1 from "./Components/Pages/Tutorial/Playlist1";
+import Playlist2 from "./Components/Pages/Tutorial/Playlist2";
+import Tutorial from "./Components/Pages/Tutorial/Tutorial";
 
 function App() {
   //  right clike disable
@@ -30,6 +33,12 @@ function App() {
         <Route path="/mg" element={<MasterAgent />} />
         <Route path="/cp1" element={<COMPLAIN1 />} />
         <Route path="/cp2" element={<Complain2 />} />
+
+        <Route path="tutorial" element={<Tutorial />}>
+          <Route path="/tutorial" element={<Playlist1 />} />
+          <Route path="/tutorial/playlist1" element={<Playlist1 />} />
+          <Route path="/tutorial/playlist2" element={<Playlist2 />} />
+        </Route>
       </Routes>
       <Footer />
     </BrowserRouter>

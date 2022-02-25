@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        className="header-quik mt-3"
+        className="footer mt-3"
         style={{ marginLeft: "auto", marginRight: "auto" }}
       >
         <div>

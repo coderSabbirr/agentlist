@@ -14,7 +14,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="navigation mt-4">
-          <ul className="nav">
+          <ul className="nav justify-content-center">
             <li className="nav-item">
               <Link className="nav-link" to="/" aria-current="page">
                 <img src={room} alt="" />
@@ -29,19 +29,30 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/admin">
-                <img src={room} alt="এডমিন" />
+                {/* <img src={room} alt="এডমিন" /> */}
+                <i
+                  className="fas fa-user-alt"
+                  style={{ marginRight: "10px" }}
+                />
                 এডমিন
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/subadmin">
-                <img src={room} alt="সাব এডমিন" />
+                {/* <img src={room} alt="সাব এডমিন" /> */}
+                <i
+                  className="fas fa-user-alt"
+                  style={{ marginRight: "10px" }}
+                />
                 সাব এডমিন
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/as">
-                <img src={room} alt="সুপার এজেন্ট" />
+                <i
+                  className="fas fa-user-friends"
+                  style={{ marginRight: "10px" }}
+                />
                 সুপার এজেন্ট
               </Link>
             </li>
@@ -51,8 +62,17 @@ const Header = () => {
                 to="/mg"
                 style={{ paddingLeft: "8px" }}
               >
-                <img src={room} alt="অনলাইন মাষ্টার এজেন্ট" />
+                <i
+                  className="fas fa-user-friends"
+                  style={{ marginRight: "10px" }}
+                />
                 অনলাইন মাষ্টার এজেন্ট
+              </Link>
+            </li>
+            <li className="nav-item" style={{ borderRight: "0" }}>
+              <Link className="nav-link" to="/tutorial">
+                <i className="fas fa-video" style={{ marginRight: "10px" }} />
+                টিউটোরিয়াল
               </Link>
             </li>
           </ul>

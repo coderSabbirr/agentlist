@@ -7,7 +7,7 @@ import Section4 from "./Section4";
 
 const Home = () => {
   return (
-    <div className="home ">
+    <div className="home">
       <HeaderQuik />
       <CreatNew />
       <AgentList />

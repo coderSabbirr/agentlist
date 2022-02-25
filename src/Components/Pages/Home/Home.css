@@ -1,13 +1,13 @@
 .home {
-  width: 850px;
+  width: 1164px;
   height: auto;
   min-height: 100%;
   text-align: center;
   margin-left: auto;
-  margin-right: 599px;
+  margin-right: auto;
 }
 .header-quik {
-  width: 1000px;
+  /* width: 1000px; */
   border: 1px solid black;
   border-radius: 8px;
 }

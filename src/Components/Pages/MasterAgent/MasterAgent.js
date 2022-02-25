@@ -99,39 +99,45 @@ const MasterAgent = () => {
                     <i className="fas fa-star"></i>
                   </td>
                   <td className="text-center">
-                    <a href={pd.facebook}>
-                      <img
-                        src={fb}
-                        alt=""
-                        style={{
-                          height: "25px",
-                          width: "25px",
-                          marginRight: "30px",
-                        }}
-                      />
-                    </a>
+                    {pd.facebook && (
+                      <a href={pd.facebook}>
+                        <img
+                          src={fb}
+                          alt=""
+                          style={{
+                            height: "25px",
+                            width: "25px",
+                            marginRight: "30px",
+                          }}
+                        />
+                      </a>
+                    )}
 
-                    <a href={pd.messenger}>
-                      <img
-                        src={ms}
-                        alt=""
-                        style={{
-                          height: "25px",
-                          width: "25px",
-                          marginRight: "30px",
-                        }}
-                      />
-                    </a>
-                    <a href={`https://wa.me/${pd.phone}`}>
-                      <img
-                        src={ws}
-                        alt=""
-                        style={{
-                          height: "25px",
-                          width: "25px",
-                        }}
-                      />
-                    </a>
+                    {pd.messenger && (
+                      <a href={pd.messenger}>
+                        <img
+                          src={ms}
+                          alt=""
+                          style={{
+                            height: "25px",
+                            width: "25px",
+                            marginRight: "30px",
+                          }}
+                        />
+                      </a>
+                    )}
+                    {pd.phone && (
+                      <a href={`https://wa.me/${pd.phone}`}>
+                        <img
+                          src={ws}
+                          alt=""
+                          style={{
+                            height: "25px",
+                            width: "25px",
+                          }}
+                        />
+                      </a>
+                    )}
                   </td>
                   <td>
                     <a href={`https://wa.me/${pd.phone}`}>{pd.phone}</a>

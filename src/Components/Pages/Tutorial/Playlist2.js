@@ -15,6 +15,7 @@ const Playlist2 = () => {
       });
   }, []);
 
+
   const handleOnChange = (e) => {
     const searchText = e.target.value;
     const filterVideo = videos.filter((video) =>
